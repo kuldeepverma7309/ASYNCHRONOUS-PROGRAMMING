@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Setting the default font family */
+    background: linear-gradient(135deg, #1e272e 0%, #2f3640 100%); /* Gradient background */
+    color: #fff; /* Text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures full viewport height */
+    margin: 0;
+}
+
+main {
+    background-color: rgba(30, 39, 46, 0.9); /* Semi-transparent background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    padding: 20px; /* Padding inside the main container */
+    max-width: 800px; /* Maximum width of the container */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Centered content in a column */
+}
+
+h1 {
+    margin-bottom: 20px; /* Space below the heading */
+    color: #f39c12; /* Heading color */
+}
+
+button {
+    padding: 20px; /* Padding inside the button */
+    font-size: 16px; /* Button text size */
+    background-color: #f39c12; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth hover transitions */
+    margin: 15px; /* Space around the button */
+}
+
+button:hover {
+    background-color: #e67e22; /* Darker background on hover */
+    transform: scale(1.05); /* Slightly larger size on hover */
+}
+
+.loader {
+    border: 8px solid rgba(255, 255, 255, 0.3); /* Spinner border */
+    border-radius: 50%; /* Circular shape */
+    border-top: 8px solid #fff; /* White spinner top */
+    width: 40px; /* Spinner width */
+    height: 40px; /* Spinner height */
+    animation: spin 2s linear infinite; /* Spin animation */
+    margin: 20px auto; /* Centering the spinner */
+}
+
+.displayText {
+    font-family: Arial, sans-serif; /* Font for display text */
+    color: white; /* Text color */
+    text-align: center; /* Center align text */
+    font-size: 1.2em; /* Text size */
+    margin: 15px; /* Margin around the display text */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); } /* Starting rotation angle */
+    100% { transform: rotate(360deg); } /* Ending rotation angle */
+}
+
+table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapsing table borders */
+    margin-top: 20px; /* Space above the table */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Box shadow */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Hidden overflow */
+    background-color: rgba(30, 39, 46, 0.9); /* Semi-transparent background */
+}
+
+thead {
+    background-color: #f39c12; /* Header background color */
+    color: white; /* Header text color */
+}
+
+th, td {
+    padding: 12px 15px; /* Cell padding */
+    text-align: left; /* Left-aligned text */
+}
+
+tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Hover background color for rows */
+}

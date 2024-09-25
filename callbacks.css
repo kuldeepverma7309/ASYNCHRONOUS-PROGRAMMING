@@ -1,0 +1,109 @@
+/* Resetting default margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif; /* Font and fallback */
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); /* Background gradient */
+    color: #fff; /* Text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Minimum viewport height */
+    margin: 0; /* Removing default body margin */
+}
+
+/* Main container styles */
+main {
+    background-color: rgba(44, 62, 80, 0.9); /* Background color with transparency */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Box shadow for depth */
+    padding: 20px; /* Padding inside the main container */
+    max-width: 800px; /* Maximum width of the container */
+    text-align: center; /* Center-align text content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Heading styles */
+h1 {
+    margin-bottom: 20px; /* Space below heading */
+    color: #e67e22; /* Heading color */
+}
+
+/* Button styles */
+button {
+    padding: 20px; /* Padding inside the button */
+    font-size: 16px; /* Font size */
+    background-color: #e67e22; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Cursor style */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+    margin: 15px; /* Margin around the button */
+}
+
+button:hover {
+    background-color: #d35400; /* Darker background color on hover */
+    transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+/* Loader animation styles */
+.loader {
+    border: 8px solid rgba(255, 255, 255, 0.3); /* Border style */
+    border-radius: 50%; /* Circle shape */
+    border-top: 8px solid #fff; /* Top border color */
+    width: 50px; /* Size */
+    height: 50px; /* Size */
+    animation: spin 2s linear infinite; /* Rotation animation */
+    margin: 20px auto; /* Centered margin */
+}
+
+/* Text display area styles */
+.displayText {
+    font-family: Arial, sans-serif; /* Font */
+    color: white; /* Text color */
+    text-align: center; /* Center-align text */
+    font-size: 1.2em; /* Font size */
+    margin: 20px; /* Margin around the text */
+}
+
+/* Animation keyframes for loader */
+@keyframes spin {
+    0% { transform: rotate(0deg); } /* Start rotation */
+    100% { transform: rotate(360deg); } /* Full rotation */
+}
+
+/* Table styles */
+table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse border spacing */
+    margin-top: 20px; /* Space above the table */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Box shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow content */
+    background-color: rgba(44, 62, 80, 0.95); /* Background color with transparency */
+}
+
+/* Table header styles */
+thead {
+    background-color: #e74c3c; /* Header background color */
+    color: white; /* Header text color */
+}
+
+/* Table cell styles */
+th, td {
+    padding: 12px 15px; /* Padding inside cells */
+    text-align: left; /* Left-align text */
+}
+
+/* Table row hover effect */
+tbody tr:hover {
+    background-color: rgba(110, 105, 105, 0.2); /* Background color on hover */
+}
